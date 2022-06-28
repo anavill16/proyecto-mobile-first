@@ -127,6 +127,7 @@ header {
       flex-direction: row;
       justify-content: space-evenly;
     }
+/* footer */
 
     footer {
         height: 8rem;
@@ -292,8 +293,9 @@ header {
     align-items: center;
   }
 }
-/* pie de pagina*/
 
+
+/*productos*/
 
     
 
