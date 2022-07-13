@@ -127,6 +127,7 @@ header {
       flex-direction: row;
       justify-content: space-evenly;
     }
+    
 /* footer */
 
     footer {
@@ -177,7 +178,7 @@ header {
 
       /* contacto*/
 
-      .contact__mainContainer {
+    .contact__mainContainer {
         min-height: 50vh;
        
         display: grid;
@@ -304,6 +305,15 @@ header {
 
 }
 
+ /*principal*/
+ #principal img {
+  width: 100%;
+  height: 400px; 
+}
+#principal img:hover {
+  border: 10px solid #dda8d0 ;
+}
+  
 
 
   /* productos*/
@@ -320,15 +330,7 @@ header {
     border: 5px solid #f7f7f7 ;
   }
 
-  /*principal*/
-  #principal img {
-    width: 100%;
-    height: 400px; 
-  }
-  #principal img:hover {
-    border: 10px solid #dda8d0 ;
-  }
-    
+ 
 
 
     

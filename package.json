@@ -1,0 +1,22 @@
+{
+  "name": "desafio-grids-analia-villalba-2",
+  "version": "1.0.0",
+  "description": "sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sas": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anavill16/proyecto-mobile-first.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Analia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anavill16/proyecto-mobile-first/issues"
+  },
+  "homepage": "https://github.com/anavill16/proyecto-mobile-first#readme"
+}
