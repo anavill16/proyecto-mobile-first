@@ -1,0 +1,23 @@
+@mixin button($button-bg-color, $button-color, $button-bg-color-hover, $button-color-hover) {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all .5s ease-in;
+    background-color: $button-bg-color;
+    color: $button-color;
+
+    &:hover {
+        background-color: $button-bg-color-hover;
+        color: $button-color-hover;
+        cursor: pointer;
+    }
+}
+
+button {
+    @include button(white, grey, grey, white);
+}
+
+button[type="submit"] {
+    @include button(grey, white, white, grey);
+}

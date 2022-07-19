@@ -1,0 +1,42 @@
+/* contacto*/
+
+.contact__mainContainer {
+    min-height: 50vh;
+   
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__mainContainer .contact__form {
+   
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__mainContainer .contact__form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact__mainContainer .contact__form input {
+    height: 2.5rem;
+    padding: 1rem;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.contact__mainContainer .contact__form textarea {
+    padding: 1rem;
+    resize: none;
+    margin-bottom: 1rem;
+}
+
+.contact__mainContainer .contact__form .contact__form--buttonsContainer {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
