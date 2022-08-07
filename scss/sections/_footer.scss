@@ -2,6 +2,11 @@
   height: auto;
   width: 100%;
   background-color: rgb(207, 171, 221);
+  padding: 0;
+  position: absolute;
+  
+
+  
   .grupo-1{
     width: 100%;
     max-width: 1000px;
@@ -50,8 +55,9 @@
  transition: all 300 ease;
 }
 .pie-pagina .grupo-1 .red-social a:hover{
-  color: aqua;
-
+  color: rgb(2, 15, 15);
+  box-shadow:5px 5px 20px rgba(0,0,0,0.6) ;
+  transform: translateY(-3%);
 }
 .pie-pagina .grupo-2{
   background-color: rgb(113, 133, 177);

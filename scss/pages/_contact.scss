@@ -2,10 +2,11 @@
 
 .contact__mainContainer {
     min-height: 50vh;
-   
+    margin-bottom: 3rem;
     display: grid;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 
 .contact__mainContainer .contact__form {

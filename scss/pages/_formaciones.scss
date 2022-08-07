@@ -1,33 +1,44 @@
-.form__sectionContainer {
-    background-color: white;
+.form__sectionContainer{
+    background-color: rgba(200, 91, 204, 0.281);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     margin: 4rem auto;
     align-items: center;
+    
+   
   }
   
   .form__sectionContainer .form__dataContainer,
   .form__sectionContainer .form__photoContainer {
-    padding: 2rem;
+    padding: 3rem;
   }
   
   .form__sectionContainer .form__photoContainer img {
     width: 100%;
-    height: 100%;
+    height: 50vh;
     object-fit: cover;
     border-radius: 10px;
+    &:hover{
+      color: rgb(2, 15, 15);
+    box-shadow:5px 5px 20px rgba(0,0,0,0.6) ;
+    transform: translateY(-3%);
+    }
+
   }
   
-  .form__sectionContainer .form__dataContainer h1 {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
   
-  .form__sectionContainer .form__dataContainer p {
+  
+  .form__sectionContainer  p{
+
     text-align: justify;
+    margin: 3rem ;
+
   }
+
+  .titulo{
+  color: blueviolet;
   
+ }
   /* Media queries */
   
   @media screen and (min-width: 768px) {
@@ -37,3 +48,5 @@
       align-items: center;
     }
   }
+  
+ 

@@ -17,107 +17,16 @@ a {
 
 body {
   background-color: rgb(250, 250, 250);
-  background: radial-gradient(grey, white);
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  background-color: white;
-  padding: 0.5rem 1rem;
-  z-index: 999;
-}
-header .header__logo {
-  height: 5rem;
-  width: 5rem;
-}
-header .header__logo img {
-  width: 100%;
-}
-header .header__burguerMenu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 2rem;
-  background-color: white;
-  border: none;
-  color: violet;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  cursor: pointer;
-  transition: box-shadow 0.5s ease-in;
-}
-header button.header__burguerMenu:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-header .header__menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-}
-header .header__menu .header__closeMenu {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 1.5rem;
-}
-header .header__menu ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-header .header__menu ul li {
-  text-transform: uppercase;
-  font-weight: 600;
-  border-radius: 5px;
-  padding: 0.5rem;
-}
-header .header__menu ul li:hover {
-  background-color: rgb(250, 250, 250);
-  background-image: linear-gradient(to right, rgb(194, 143, 181), white);
-}
-
-input#menu {
-  display: none;
-}
-input#menu:checked ~ .header__menu {
-  display: block;
-}
-
-header .header__burguerMenu {
-  display: none;
-}
-
-header .header__menu .header__closeMenu {
-  display: none;
-}
-
-header .header__menu {
-  display: initial;
-  position: inherit;
-}
-
-header .header__menu ul {
-  flex-direction: row;
-  justify-content: space-evenly;
+  background: radial-gradient(rgb(167, 111, 157), white);
+  position: relative;
 }
 
 .pie-pagina {
   height: auto;
   width: 100%;
   background-color: rgb(207, 171, 221);
+  padding: 0;
+  position: absolute;
 }
 .pie-pagina .grupo-1 {
   width: 100%;
@@ -164,7 +73,9 @@ header .header__menu ul {
 }
 
 .pie-pagina .grupo-1 .red-social a:hover {
-  color: aqua;
+  color: rgb(2, 15, 15);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+  transform: translateY(-3%);
 }
 
 .pie-pagina .grupo-2 {
@@ -208,25 +119,31 @@ button[type=submit]:hover {
   cursor: pointer;
 }
 
-.slide {
-  margin-top: 10px;
+.portada {
+  height: 80vh;
+  background-image: url(../images/portada.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.slide img {
-  height: 65vh;
-}
-
-#principal img {
+.portada div {
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+  background-color: rgba(12, 11, 11, 0.336);
   width: 100%;
-  height: 400px;
+  padding: 15px;
 }
 
-#principal img:hover {
-  border: 10px solid #dda8d0;
+.carousel-container {
+  display: flex;
+  justify-content: center;
 }
 
 .form__sectionContainer {
-  background-color: white;
+  background-color: rgba(200, 91, 204, 0.281);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   width: 90%;
   margin: 4rem auto;
@@ -235,24 +152,28 @@ button[type=submit]:hover {
 
 .form__sectionContainer .form__dataContainer,
 .form__sectionContainer .form__photoContainer {
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .form__sectionContainer .form__photoContainer img {
   width: 100%;
-  height: 100%;
+  height: 50vh;
   object-fit: cover;
   border-radius: 10px;
 }
-
-.form__sectionContainer .form__dataContainer h1 {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.form__sectionContainer .form__photoContainer img:hover {
+  color: rgb(2, 15, 15);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+  transform: translateY(-3%);
 }
 
-.form__sectionContainer .form__dataContainer p {
+.form__sectionContainer p {
   text-align: justify;
+  margin: 3rem;
+}
+
+.titulo {
+  color: blueviolet;
 }
 
 /* Media queries */
@@ -266,9 +187,11 @@ button[type=submit]:hover {
 /* contacto*/
 .contact__mainContainer {
   min-height: 50vh;
+  margin-bottom: 3rem;
   display: grid;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 }
 
 .contact__mainContainer .contact__form {
@@ -301,8 +224,8 @@ button[type=submit]:hover {
   justify-items: center;
 }
 
-about__sectionContainer {
-  background-color: white;
+.about__sectionContainer {
+  background-color: rgba(148, 186, 219, 0.541);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   width: 90%;
   margin: 4rem auto;
@@ -315,20 +238,15 @@ about__sectionContainer {
 }
 
 .about__sectionContainer .about__photoContainer img {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70vh;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.about__sectionContainer .about__dataContainer h1 {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
 .about__sectionContainer .about__dataContainer p {
   text-align: justify;
+  margin-bottom: 3rem;
 }
 
 /* Media queries */
@@ -349,6 +267,10 @@ about__sectionContainer {
 }
 #galeria .col-lg-4 img:hover {
   border: 5px solid #221d1d;
+}
+
+.boton {
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

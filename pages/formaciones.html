@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/95e78f24ed.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css">
@@ -13,40 +14,47 @@
 <body>
   
 <header>
-    <div class="header__logo">
-      <a href="../index.html">
-        <img src="../images/logo.jpeg" alt="logo" />
+  <nav class="navbar navbar-expand-lg navbar-light"  style=" background-color: rgb(113, 133, 177);"  >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+          <img src="../images/logo.jpeg" width="100px" alt="Logo">
       </a>
-    </div>
-    <label for="menu" class="header__burguerMenu">
-      <i class="fa-solid fa-bars"></i>
-    </label>
-    <input type="checkbox" id="menu">
-    <nav class="header__menu">
-      <label for="menu" class="header__closeMenu">
-        <i class="fa-solid fa-circle-xmark"></i>
-      </label>
-      <ul>
-        <li id="header__menu--itemFormaciones">
-          <a href="formaciones.html">Formaciones</a>
-          <ul>
-            <li><a href="formaciones.html#Reiki">Reiki</a></li>
-            <li><a href="formaciones.html#Meditaciones">Meditaciones</a></li>
-            <li><a href="formaciones.html#Dikshas">Chakras</a></li>
-          </ul>
+      <button class="navbar-toggler"  type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">Acerca de</a>
         </li>
-        <li><a href="about.html">Acerca de</a></li>
-        <li><a href="contact.html">Contacto</a></li>
-        <li><a href="productos.html">Productos</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="./formaciones.html">Sesiones</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="./productos.html">Productos</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="./contact.html">Contacto</a>
+       </li>
+          
       </ul>
-    </nav>
-  </header>
+        
+      </div>
+    </div>
+  </nav>  
+</header>
 <main>
+  <div  class="text-center pt-5 titulo" >
+    <h1>Sesiones</h1>
+  </div>
     <section class="form__sectionContainer">
         <article class="form__dataContainer">          
           <h2>Reiki</h2>
             <div class="form__photoContainer">
-                <img src="../images/reiki.jpg" alt="Reiki">
+                <img src="../images/Reiki.jpeg" alt="Reiki">
             </div>             
         </article>
         <p>Reiki es una técnica de relajación de origen japonés que nos ayuda a reducir el estrés y recuperar nuestra paz interior y también promueve la sanación en todos los niveles. 
@@ -55,7 +63,7 @@
           
           Aprender Reiki es sencillo, no se requieren conocimientos previos. </p>
     </section>
-    <section class="form__sectionContainer">
+    <section class="form__sectionContainer" >
         
       <article class="form__dataContainer">
           <h2>Meditaciones</h2>
@@ -63,7 +71,7 @@
               <img src="../images/foto1.jpg" alt="Meditaciones">              
           </div>          
       </article>
-      <p>La meditación es el estado natural de la mente cuando no haces absolutamente nada. Cuando no estás tratando de hacer nada y no estás pensando en el pasado o el futuro, tu mente se instalará natural y espontáneamente en el silencio interior de la meditación.
+      <p >La meditación es el estado natural de la mente cuando no haces absolutamente nada. Cuando no estás tratando de hacer nada y no estás pensando en el pasado o el futuro, tu mente se instalará natural y espontáneamente en el silencio interior de la meditación.
 
         El propósito de la meditación es estar aquí ahora, en este momento. Todo lo que necesitas para aprender a meditar es, dejarlo ir, dejar de intentar y entender que meditar es fácil.</p>
 
@@ -71,7 +79,7 @@
       </section>
 
   <section class="form__sectionContainer">
-        
+      
     <article class="form__dataContainer">
         <h2>Armonizacion de Chakras</h2>
          <div class="form__photoContainer">
@@ -95,7 +103,7 @@
               </div>
               <div class="box">
                   <h2>Acerca de mi</h2>
-                  <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, at.</P>                  
+                  <P>Mi nombre es Analia, maestra de Reiki, en constante autoformación en terapia holística-integrativa.</P>                  
               </div>
               <div class="box">
                   <H2>Seguime</H2>
@@ -115,7 +123,8 @@
      
   
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>
